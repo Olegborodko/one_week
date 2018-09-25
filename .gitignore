@@ -1,0 +1,7 @@
+.idea/
+wp-config.php
+wp-content/uploads/
+wp-content/themes/one/node_modules/
+wp-content/themes/one/temp/
+
+
