@@ -7,12 +7,12 @@
 ( function() {
 	var container, button, menu, links, i, len;
 
-	container = document.getElementById( 'site-navigation' );
+	container = document.getElementsByClassName( 'site-navigation' )[0];
 	if ( ! container ) {
 		return;
 	}
 
-	button = container.getElementsByTagName( 'button' )[0];
+	button = container.getElementsByClassName( 'button-menu-toggle' )[0];
 	if ( 'undefined' === typeof button ) {
 		return;
 	}

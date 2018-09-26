@@ -689,18 +689,9 @@ a:hover, a:active {
 }
 
 /* Small menu. */
-.menu-toggle,
+.button-menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
 }
 
 .site-main .comment-navigation, .site-main
@@ -981,4 +972,100 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/* custom style */
+header .site-logo img.custom-logo{
+	height:60px;
+}
+
+header .container{
+	display:flex;
+}
+
+header #primary-menu{
+	float: right;
+}
+
+header #primary-menu a{
+	padding:20px;
+}
+
+header#masthead{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 10000;
+	padding-top: 0;
+	
+	background: #FFFFFF;
+	border-bottom: 1px solid;
+}
+
+header{
+	will-change: transform;
+	transition: height 0.5s linear;
+	-moz-transition: height 0.5s linear, opacity 0.3s linear;
+	-webkit-transition: height 0.5s linear, opacity 0.3s linear;
+	-o-transition: height 0.5s linear, opacity 0.3s linear;
+	-ms-transition: height 0.5s linear, opacity 0.3s linear;
+	overflow: initial;
+	opacity: 1;
+}
+
+header.js_menu_display_none{
+	opacity: 0;
+}
+
+body{
+	padding-top:100px;
+}
+
+header .custom-logo-link{
+	display: block;
+	width: 260px;
+}
+
+@media screen and (min-width: 75em) { /* от 1200px */
+	.button-menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	
+	header #primary-menu {
+		
+	}
+}
+
+@media screen and (max-width: 75em) { /* до 1200px */
+	header .button-menu-toggle {
+		display: inline-block;
+		float: right;
+		margin-top: -45px;
+	}
+	
+	header .sub-menu{
+		position:relative;
+	}
+	
+	header .container{
+		display:block;
+	}
+	
+	header #primary-menu,
+	header #primary-menu li{
+		float: none;
+	}
+	
+	header #primary-menu li.focus .sub-menu {
+		margin-left: 20px;
+		float: none;
+		position:relative;
+	}
+	
+	header .main-navigation ul ul{
+		box-shadow: none;
+	}
 }
