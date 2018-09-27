@@ -40,13 +40,14 @@
 
 
             <nav class="main-navigation site-navigation">
-              <div class="button-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-                <i class="fa fa-bars" id="i_menu"></i>
+              <div id="js_i_menu_button" class="button-menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fa fa-bars" id="js_i_menu"></i>
               </div>
               <?php
               wp_nav_menu( array(
               'theme_location' => 'menu-1',
               'menu_id'        => 'primary-menu',
+              'menu_class'     => 'sf-menu '
               ) );
               ?>
             </nav><!-- #site-navigation -->

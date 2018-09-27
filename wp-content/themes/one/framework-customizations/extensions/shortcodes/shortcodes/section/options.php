@@ -114,10 +114,10 @@ $options = array(
 'desc'  => __('empty == 100% without padding', 'fw'),
 ),
 
-  'data_aos' => array(
+  'animated' => array(
   'type'  => 'text',
   'value' => '',
-  'label' => __('data-aos', '{domain}'),
-  'desc'  => __('https://github.com/michalsnik/aos#-animations', 'fw'),
+  'label' => __('Animated', '{domain}'),
+  'desc'  => __('fadeOutRight, zoomIn, .. other -> https://github.com/daneden/animate.css', 'fw'),
   )
 );

@@ -37,28 +37,28 @@ if ( ! empty( $atts['video'] ) ) {
 $container_class = ( isset( $atts['is_fullwidth'] ) && $atts['is_fullwidth'] ) ? 'fw-container-fluid' : 'fw-container';
 
 if ( ! empty( $atts['class'] ) ) {
-  $section_extra_classes .= $atts['class'];
+  $section_extra_classes .= esc_attr($atts['class']);
+}
+
+$animated = '';
+if ( ! empty( $atts['animated'] ) ) {
+  $animated = esc_attr($atts['animated']);
 }
 
 $id = '';
 if ( ! empty( $atts['id'] ) ) {
-  $id = $atts['id'];
+  $id = esc_attr($atts['id']);
 }
 
 
 if ( ! empty( $atts['container_class'] ) ) {
-  $container_class .= ' ' . $atts['container_class'];
+  $container_class .= ' ' . esc_attr($atts['container_class']);
 }
 
 if ( isset( $atts['is_mobile_display'] ) && $atts['is_mobile_display'] ) {
   if ($atts['is_mobile_display']=='no') {
     $section_extra_classes .= ' g_mobile_display_none';
   }
-}
-
-$data_aos = '';
-if ( ! empty( $atts['data_aos'] ) ) {
-  $data_aos = $atts['data_aos'];
 }
 
 $container_style = '';
@@ -87,7 +87,6 @@ if ( ! empty( $atts['section_max_width'] ) ) {
   $section_max_width = 'class="fw-container" style="max-width:'.esc_attr($atts['section_max_width']).'"';
 }
 
-
 $m_margin_top = 0;
 if ( ! empty( $atts['m_margin_top'] ) ) {
   $m_margin_top = esc_attr($atts['m_margin_top']);
@@ -99,11 +98,11 @@ if ( ! empty( $atts['m_margin_bottom'] ) ) {
 }
 
 ?>
-<section data-aos="<?=$data_aos?>"
+<section data-animated="<?=$animated?>"
          data-m-top="<?=$m_margin_top?>"
          data-m-bottom="<?=$m_margin_bottom?>"
          id="<?= esc_attr($id) ?>"
-         class="j_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
+         class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
          <?php echo $bg_video_data_attr; ?>
          style="margin-top: <?= $margin_top ?>; margin-bottom: <?= $margin_bottom ?>;" >
   
