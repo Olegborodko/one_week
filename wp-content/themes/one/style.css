@@ -842,7 +842,6 @@ a:hover, a:active {
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: 1.5em 0 0;
 }
@@ -974,7 +973,7 @@ object {
 	display: block;
 }
 
-/* custom style */
+/* ==================== custom style ==================== */
 header .site-logo img.custom-logo{
 	height:60px;
 }
@@ -1018,7 +1017,7 @@ header.js_menu_display_none{
 }
 
 body{
-	padding-top:100px;
+	padding-top:68px;
 }
 
 header .custom-logo-link{
