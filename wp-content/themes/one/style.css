@@ -1025,6 +1025,14 @@ header .custom-logo-link{
 	width: 260px;
 }
 
+header .active{
+	text-decoration: underline;
+}
+
+header .site-logo{
+	max-width: 302px;
+}
+
 @media screen and (min-width: 75em) { /* от 1200px */
 	.button-menu-toggle {
 		display: none;
@@ -1045,8 +1053,9 @@ header .custom-logo-link{
 		margin-top: -45px;
 	}
 	
-	header .sub-menu{
+	header .main-navigation ul.sub-menu{
 		position:relative;
+		float:none;
 	}
 	
 	header .container{
@@ -1066,5 +1075,18 @@ header .custom-logo-link{
 	
 	header .main-navigation ul ul{
 		box-shadow: none;
+	}
+	
+	header #primary-menu ul li a{
+		width:100%;
+	}
+	
+	header .sub-menu{
+		display:none;
+		padding-left: 20px;
+	}
+	
+	header .sub_menu_open{
+		display:block;
 	}
 }
