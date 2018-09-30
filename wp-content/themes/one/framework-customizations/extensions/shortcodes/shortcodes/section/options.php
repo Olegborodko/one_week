@@ -118,6 +118,6 @@ $options = array(
   'type'  => 'text',
   'value' => '',
   'label' => __('Animated', '{domain}'),
-  'desc'  => __('fadeOutRight, zoomIn, .. other -> https://github.com/daneden/animate.css', 'fw'),
+  'desc'  => __('fadeInRightBig, zoomIn, .. other -> https://github.com/daneden/animate.css', 'fw'),
   )
 );

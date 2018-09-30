@@ -406,10 +406,6 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 }
 
-p {
-	margin-bottom: 1.5em;
-}
-
 dfn, cite, em, i {
 	font-style: italic;
 }
@@ -626,7 +622,7 @@ a:hover, a:focus, a:active {
 }
 
 a:focus {
-	outline: thin dotted;
+	/* outline: thin dotted; */
 }
 
 a:hover, a:active {
@@ -975,49 +971,6 @@ object {
 
 /* ==================== custom style ==================== */
 
-@font-face {
-	font-family: 'Oswald';
-	src: url('fonts/Oswald-Light.eot');
-	src: url('fonts/Oswald-Light.eot?#iefix') format('embedded-opentype'),
-	url('fonts/Oswald-Light.woff2') format('woff2'),
-	url('fonts/Oswald-Light.woff') format('woff'),
-	url('fonts/Oswald-Light.ttf') format('truetype'),
-	url('fonts/Oswald-Light.svg#Oswald-Light') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Geneva';
-	src: url('fonts/GenevaPlain.eot');
-	src: url('fonts/GenevaPlain.eot?#iefix') format('embedded-opentype'),
-	url('fonts/GenevaPlain.woff2') format('woff2'),
-	url('fonts/GenevaPlain.woff') format('woff'),
-	url('fonts/GenevaPlain.ttf') format('truetype'),
-	url('fonts/GenevaPlain.svg#GenevaPlain') format('svg');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Newt Serif';
-	src: url('fonts/NewtSerifLight.eot');
-	src: url('fonts/NewtSerifLight.eot?#iefix') format('embedded-opentype'),
-	url('fonts/NewtSerifLight.woff2') format('woff2'),
-	url('fonts/NewtSerifLight.woff') format('woff'),
-	url('fonts/NewtSerifLight.ttf') format('truetype'),
-	url('fonts/NewtSerifLight.svg#NewtSerifLight') format('svg');
-	font-weight: 300;
-	font-style: normal;
-}
-
-/* --------------------------------- */
-
-
-header .site-logo img.custom-logo{
-	height:60px;
-}
-
 header .container{
 	display:flex;
 }
@@ -1027,7 +980,8 @@ header #primary-menu{
 }
 
 header #primary-menu a{
-	padding:20px;
+	padding: 22px 0 22px 0;
+	margin-left: 50px;
 }
 
 header#masthead{
@@ -1038,7 +992,6 @@ header#masthead{
 	padding-top: 0;
 	
 	background: #FFFFFF;
-	border-bottom: 1px solid;
 }
 
 header{
@@ -1056,20 +1009,33 @@ header.js_menu_display_none{
 	opacity: 0;
 }
 
+header.js_menu_scroll_now{
+	border-bottom:1px solid #2025c0;
+}
+
 body{
 	padding-top:68px;
 }
 
 header .custom-logo-link{
 	display: block;
+	line-height: 0;
 }
 
-header .active{
-	text-decoration: underline;
+header #primary-menu li.active a{
+	color: #2025c0;
 }
 
 header .site-logo{
-	
+	display: flex;
+	align-items: center;
+}
+
+header ul#primary-menu li a{
+	font-family: Oswald, Arial, sans-serif;
+	color: #9b9b9b;
+	font-size: 20px;
+	font-weight: 300;
 }
 
 @media screen and (min-width: 75em) { /* от 1200px */
@@ -1089,7 +1055,7 @@ header .site-logo{
 	header .button-menu-toggle {
 		display: inline-block;
 		float: right;
-		margin-top: -45px;
+		margin-top: -48px;
 	}
 	
 	header .main-navigation ul.sub-menu{
@@ -1118,6 +1084,7 @@ header .site-logo{
 	
 	header #primary-menu ul li a{
 		width:100%;
+		
 	}
 	
 	header .sub-menu{
@@ -1128,4 +1095,33 @@ header .site-logo{
 	header .sub_menu_open{
 		display:block;
 	}
+	
+	header .site-logo{
+		height: 75px;
+	}
+	
+	header ul#primary-menu li a{
+		margin-left: 0;
+		padding-left: 50px;
+	}
+}
+
+/* -------------- img_with_backg -------------------- */
+
+.img_with_backg .img_with_backg__block{
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: 520px 570px;
+}
+
+.img_with_backg
+.img_with_backg__img{
+	margin: 150px 0 0 110px;
+	position:relative;
+}
+
+.img_with_backg
+.img_with_backg__shadow{
+	background-color: #edeaea;
+	position:absolute;
 }

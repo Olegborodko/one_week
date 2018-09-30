@@ -15,6 +15,7 @@ jQuery(window).bind("load", function() {
     currentScrollTop = a;
 
     if (a >= 100) {
+      navbar.addClass("js_menu_scroll_now");
       if (c < currentScrollTop && a > b + b) {
         if (!mobile_size_1200) {
           navbar.addClass("js_menu_display_none");
@@ -29,6 +30,7 @@ jQuery(window).bind("load", function() {
       if (!mobile_size_1200) {
         navbar.removeClass("js_menu_display_none");
       }else{}
+      navbar.removeClass("js_menu_scroll_now");
     }
 
   });
@@ -188,5 +190,21 @@ jQuery(window).bind("load", function() {
     }
   })
   .onStepExit();
+});
 
+
+//=========================== shadow image
+jQuery(window).load(function() {
+  jQuery(".img_with_backg__block .img_with_backg__shadow").each(function (i, el) {
+    var el_ = jQuery(el);
+    var img_ =  el_.closest('.img_with_backg__block').find('img.img_with_backg__img');
+    //var img_ = el_.nextAll('img.img_with_backg__img').first();
+
+    el_.css("width",img_.width());
+    el_.css("height",img_.height() - (img_.height() / 5.36));
+    el_.css("top",(img_.position().top) + (img_.height() / 2.977));
+    el_.css("left",(img_.position().left) + (img_.width() / 5.22) );
+    el_.css("margin",img_.css("margin"));
+
+  });
 });

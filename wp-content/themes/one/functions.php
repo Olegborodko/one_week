@@ -124,6 +124,8 @@ function one_scripts() {
 
   wp_enqueue_style( 'font-awesome', get_template_directory_uri().'/css/font-awesome.min.css', '', '23423432432', false );
 
+  wp_enqueue_style( 'fonts', get_template_directory_uri().'/fonts/stylesheet.css', '', '23423432433', false );
+
   wp_enqueue_style( 'animate-css', get_template_directory_uri().'/css/animate.css', '', '234234324328', false );
 
 	wp_enqueue_script( 'one-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
@@ -165,4 +167,39 @@ require get_template_directory() . '/inc/customizer.php';
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
+}
+
+// Customize mce editor font sizes
+if ( ! function_exists( 'wpex_mce_text_sizes' ) ) {
+  function wpex_mce_text_sizes( $initArray ){
+    $initArray['fontsize_formats'] = "9px 10px 11px 12px 13px 14px 15px 16px 17px 18px 19px 20px 21px 22px 23px 24px 25px 26px 27px 28px 29px 30px 31px 32px 33px 34px 35px 36px 37px 38px 39px 40px 41px 42px 43px 44px 45px 50px 55px 60px 65px 70px 75px 80px";
+    return $initArray;
+  }
+}
+add_filter( 'tiny_mce_before_init', 'wpex_mce_text_sizes' );
+
+//custom fonts mce editor
+add_filter( 'tiny_mce_before_init', 'mce_custom_fonts' );
+function mce_custom_fonts( $init ) {
+  $theme_advanced_fonts = "Oswald=Oswald,Arial,sans-serif;" .
+  "Geneva=Geneva,Helvetica,sans-serif;" .
+  "Newt Serif=Newt Serif,Times New Roman,serif;".
+  "Arial=arial,helvetica,sans-serif;" .
+  "Arial Black=arial black,avant garde;" .
+  "Book Antiqua=book antiqua,palatino;" .
+  "Comic Sans MS=comic sans ms,sans-serif;" .
+  "Courier New=courier new,courier;" .
+  "Georgia=georgia,palatino;" .
+  "Helvetica=helvetica;" .
+  "Impact=impact,chicago;" .
+  "Symbol=symbol;" .
+  "Tahoma=tahoma,arial,helvetica,sans-serif;" .
+  "Terminal=terminal,monaco;" .
+  "Times New Roman=times new roman,times;" .
+  "Trebuchet MS=trebuchet ms,geneva;" .
+  "Verdana=verdana,geneva;" .
+  "Webdings=webdings;" .
+  "Wingdings=wingdings,zapf dingbats";
+  $init['font_formats'] = $theme_advanced_fonts;
+  return $init;
 }
