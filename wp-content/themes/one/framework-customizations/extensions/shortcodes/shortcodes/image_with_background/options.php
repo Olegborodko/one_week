@@ -18,6 +18,20 @@ $options = array(
 'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
 ),
 
+'background_mobile' => array(
+'label' => __('Background display on mobile', 'fw'),
+'type'  => 'switch',
+'value' => 'yes',
+'left-choice' => array(
+'value' => 'yes',
+'label' => __('YES', 'fw')
+),
+'right-choice' => array(
+'value' => 'no',
+'label' => __('NO', 'fw'),
+)
+),
+
 'margin_top' => array(
 'type'  => 'text',
 'value' => '0',

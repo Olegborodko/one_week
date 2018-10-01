@@ -51,15 +51,16 @@ jQuery(window).bind("load", function() {
       var this_ = jQuery(el);
       var attr_top = this_.attr('data-m-top');
       var attr_bottom = this_.attr('data-m-bottom');
-      var attr_height = this_.attr('data-m-minh');
+      var attr_padding = this_.attr('data-m-padding');
+
       if (attr_top.length > 0) {
         this_.css('margin-top', attr_top);
       }
       if (attr_bottom.length > 0) {
         this_.css('margin-bottom', attr_bottom);
       }
-      if (attr_height && attr_height.length > 0) {
-        this_.css('min-height', attr_height);
+      if (attr_padding && attr_padding.length > 0) {
+        this_.css('padding', attr_padding);
       }
     });
   }

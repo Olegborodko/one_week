@@ -32,9 +32,9 @@ if ( ! empty( $atts['padding'] ) ) {
   $padding =  esc_attr($atts['padding']);
 }
 
-$line_height = '0';
-if ( ! empty( $atts['line_height'] ) ) {
-  $line_height =  esc_attr($atts['line_height']);
+$padding_mobile = '0';
+if ( ! empty( $atts['padding_mobile'] ) ) {
+  $padding_mobile =  esc_attr($atts['padding_mobile']);
 }
 
 $animated = '';
@@ -45,13 +45,13 @@ if ( ! empty( $atts['animated'] ) ) {
 ?>
 
 <div data-animated="<?=$animated?>"
-     class="g_text j_mobile_margin unyson_wp_editor <?=$class?>"
+     data-m-padding="<?=$padding_mobile?>"
+     class="g_text js_mobile_margin unyson_wp_editor <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      data-m-bottom="<?=$m_margin_bottom?>"
      style="margin-top: <?= $margin_top ?>;
      margin-bottom: <?= $margin_bottom ?>;
-     padding:<?=$padding?>;
-     line-height: <?=$line_height?>">
+     padding:<?=$padding?>;">
 	<?php echo do_shortcode( $atts['text'] ); ?>
 </div>
 	

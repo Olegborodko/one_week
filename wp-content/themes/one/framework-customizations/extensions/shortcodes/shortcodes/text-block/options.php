@@ -12,13 +12,6 @@ $options = array(
     'size' => 'large'
 	),
 
-'line_height' => array(
-'type'  => 'text',
-'value' => '24px',
-'label' => __('line-height', '{domain}'),
-'desc'  => __('10px, 24px, ...', 'fw'),
-),
-
 'margin_top' => array(
 'type'  => 'text',
 'value' => '0',
@@ -51,6 +44,13 @@ $options = array(
 'type'  => 'text',
 'value' => '0',
 'label' => __('padding', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
+'padding_mobile' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding mobile', '{domain}'),
 'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
 ),
 
