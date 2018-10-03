@@ -84,7 +84,7 @@ jQuery(window).bind("load", function() {
     container: document.documentElement,
     desktop: true,
     mobile: true,
-    reset: true, //true = replay
+    reset: false, //true = replay
     useDelay: 'always',
     viewFactor: 0.0,
     viewOffset: {

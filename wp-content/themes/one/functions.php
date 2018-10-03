@@ -203,3 +203,10 @@ function mce_custom_fonts( $init ) {
   $init['font_formats'] = $theme_advanced_fonts;
   return $init;
 }
+
+/* -- styles for admin panel -- */
+function my_admin_theme_style() {
+  //wp_enqueue_style('my-admin-fonts-css', get_template_directory_uri() . '/fonts/stylesheet.css');
+  wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/css/frontend_and_backend.css');
+}
+add_action('admin_enqueue_scripts', 'my_admin_theme_style');

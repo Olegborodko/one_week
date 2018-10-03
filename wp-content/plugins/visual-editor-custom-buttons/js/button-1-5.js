@@ -9,7 +9,7 @@ function getBaseURL () {
     tinymce.create('tinymce.plugins.vecb_button5', {
         init : function(ed, url) {
             ed.addButton('vecb_button5', {
-                title : 'zoom text',image : url+'/icons/magnifying_glass.png',onclick : function() {
+                title : 'zoom text',image : url+'/icons/justify.png',onclick : function() {
                      ed.selection.setContent('<span class="zoom_text">' + ed.selection.getContent() + '</span>');
                 }
             });

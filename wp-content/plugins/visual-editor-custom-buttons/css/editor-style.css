@@ -36,12 +36,52 @@ line-height: 54px;
 	font-size:93px;
 	color: #1086c2;
 	font-family: 'Newt Serif', 'Times New Roman', serif;
-	line-height:24px;
+	line-height:68px;
 }
 
 .zoom_text{
 	line-height: 80px;
 	font-size: 45px;
 	font-family: 'Newt Serif', 'Times New Roman', serif;
+}
+
+
+
+.wave_blue{
+	position: relative;
+}
+
+.wave_blue:before{
+	display:block;
+	content:'';
+	background: url(/wp-content/themes/one/img/wavy_lineblue.png) no-repeat;
+	height: 12px;
+	width: 177px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background-size: contain;
+}
+
+h3.h3{
+line-height: 54px;
+	font-size: 64px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	color: #5a5a5a;
+	margin-top:18px;
+}
+
+.small_text{
+	font-size: 20px;
+	color: #5a5a5a;
+	font-family: 'Geneva', 'Helvetica Neue', sans-serif;
+	line-height: 20px;
+}
+
+.blue_middle_text{
+	font-size: 32px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	color: #1086c2;
+	line-height: 32px;
 }
 

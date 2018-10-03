@@ -37,11 +37,6 @@ if ( !empty( $atts['image'] ) && !empty($atts['image']['url']) ) {
   $image = esc_attr($atts['image']['url']);
 }
 
-$title = '';
-if ( ! empty( $atts['title'] ) ) {
-  $title = esc_attr($atts['title']);
-}
-
 ?>
 
 <div data-animated="<?=$animated?>"
@@ -52,7 +47,7 @@ if ( ! empty( $atts['title'] ) ) {
      margin-bottom: <?=$margin_bottom?>;">
   <div class="are_building__container">
     <div class="are_building__left">
-      <h2><?=$title?></h2>
+      <div class="title"><?=$atts['title']?></div>
       <div class="are_building__description">
         <?=$atts['text']?>
       </div>

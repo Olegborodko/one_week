@@ -42,16 +42,26 @@ if ( ! empty( $atts['animated'] ) ) {
   $animated = esc_attr($atts['animated']);
 }
 
+$max_width = '100%';
+if ( ! empty( $atts['max_width'] ) ) {
+  $max_width =  esc_attr($atts['max_width']);
+}
+
+if ( ! empty( $atts['additional_classes'] ) ) {
+  $class = $class . ' ' . esc_attr($atts['additional_classes']);
+}
+
 ?>
 
 <div data-animated="<?=$animated?>"
      data-m-padding="<?=$padding_mobile?>"
-     class="g_text js_mobile_margin unyson_wp_editor <?=$class?>"
+     class="animated g_text js_mobile_margin unyson_wp_editor <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      data-m-bottom="<?=$m_margin_bottom?>"
      style="margin-top: <?= $margin_top ?>;
      margin-bottom: <?= $margin_bottom ?>;
-     padding:<?=$padding?>;">
+     padding:<?=$padding?>;
+     max-width:<?=$max_width?>;">
 	<?php echo do_shortcode( $atts['text'] ); ?>
 </div>
 	

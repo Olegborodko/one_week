@@ -1,126 +1,87 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.recb_inputblock {
-	margin:20px 0 20px 0;
+.wave_red{
+position: relative;
+}
+
+.wave_red:before{
+	display:block;
+	content:'';
+	background: url(/wp-content/themes/one/img/wavyline.png) no-repeat;
+	height: 16px;
+	width: 105px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background-size: contain;
+}
+
+.top_description{
+font-family: Geneva, Helvetica, sans-serif;
+color: #1086c2;
+line-height: 24px;
+font-size: 22px;
+}
+
+.h1{
+line-height: 54px;
+	font-size: 64px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	color: #5a5a5a;
+	margin-top:18px;
+}
+
+.h2{
+	font-size:93px;
+	color: #1086c2;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	line-height:68px;
+}
+
+.zoom_text{
+	line-height: 80px;
+	font-size: 45px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
 }
 
 
-#vecb_btnicon .recb_inputblock, #vecb_quicktag {
-  	margin: 0 !important;
+
+.wave_blue{
+	position: relative;
 }
 
-#vecb_btnicon .recb_inputblock {
-	padding:20px 0 20px 0;
+.wave_blue:before{
+	display:block;
+	content:'';
+	background: url(/wp-content/themes/one/img/wavy_lineblue.png) no-repeat;
+	height: 12px;
+	width: 177px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background-size: contain;
 }
 
-
-#editor-custom-buttons label, .recb_inputblock .vecb_label, .recb_label {
-	color: #333 !important;
-	font-size: 13px !important;
-	font-weight: bold !important;
-	padding: 0 !important;
-	margin: 0 0 7px !important;
-	display: block !important;
-	vertical-align: text-bottom !important;
-	text-shadow: 0 1px 0 white;
-	line-height: 1.1em;
+h3.h3{
+line-height: 54px;
+	font-size: 64px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	color: #5a5a5a;
+	margin-top:18px;
 }
 
-.recb_inputblock textarea, .recb_inputblock .vecb_text  {
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
-	border-width: 1px;
-	border-style: solid;
-	width:100%;
-	border-color:#ccc;
+.small_text{
+	font-size: 20px;
+	color: #5a5a5a;
+	font-family: 'Geneva', 'Helvetica Neue', sans-serif;
+	line-height: 20px;
 }
 
-.vecb_preview {
-	background:url(../previewback.png) 0 16px no-repeat;
-	width:106px;
-	height:50px;
-	display:inline-block;
-	margin-left:60px;
-	vertical-align:top;
-	margin-top:3px;
+.blue_middle_text{
+	font-size: 32px;
+	font-family: 'Newt Serif', 'Times New Roman', serif;
+	color: #1086c2;
+	line-height: 32px;
 }
 
-#vecb_btnimg {
-	width:20px;
-	float:left;
-}
-
-#vecb_btnimg img {
-	width:100%;
-}
-
-.vecb_preview_text {
-	padding-right:20px;
-	padding-top:1px;
-	height:21px;
-	font-weight:bold;
-	float:right;
-	vertical-align:top
-
-}
-
-.vecb_iconselect {
-	display:inline-block;
-	vertical-align:top;
-}
-
-.recb_inputblock .vecb_text {
- 	width:99% !important;	
-}
-
-.recb_inputblock textarea {
-	resize:vertical;
-}
-
-.recb_inputblock .vecb_desc {
-	font-size: 11px;
-	line-height: 1.1em;
-	margin: 0 0 1em;
-	padding: 0;
-	color: #666;
-	text-shadow: 0 1px 0 white;
-}
-
-.vecb_less_space {
-	margin-top:10px !important;
-}
-
-.vecb_no_top {
-	margin-top:0 !important;
-}
-
-#menu-posts-vecb_editor_buttons .wp-menu-image {
-   background: url(../block--plus.png) no-repeat 6px -17px !important;
-}
-
-
-#menu-posts-vecb_editor_buttons:hover .wp-menu-image, #menu-posts-vecb_editor_buttons.wp-has-current-submenu .wp-menu-image {
-   background-position:6px 7px!important;
-}
-
-.icon32-posts-vecb_editor_buttons {
-	background-position: -370px -5px !important;
-}
-
-#vecb_icon_msdd {
-	width:250px !important;
-}
-
-#vecb_icon_msdd li, dd {
- 	margin-bottom: 0px !important;
-}
-
-#vecb_icon_msdd li img, .ddTitleText img {
-	 width:20px;
-	 height:20px;
-}
-
-.vecb_preview {
-	display:none;
-}

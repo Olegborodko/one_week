@@ -54,6 +54,8 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
+@import url("css/frontend_and_backend.css");
+
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
@@ -76,8 +78,8 @@ body {
  */
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	/*font-size: 2em;*/
+	/*margin: 0.67em 0;*/
 }
 
 /* Grouping content
@@ -1131,6 +1133,8 @@ header ul#primary-menu li a{
 	position:absolute;
 }
 
+/* --- wave --- */
+
 .wave_red{
 	position: relative;
 }
@@ -1147,6 +1151,24 @@ header ul#primary-menu li a{
 	background-size: contain;
 }
 
+.wave_blue{
+	position: relative;
+}
+
+.wave_blue:before{
+	display:block;
+	content:'';
+	background: url(/wp-content/themes/one/img/wavy_lineblue.png);
+	height: 12px;
+	width: 177px;
+	position: absolute;
+	top: 42px;
+	left: 0;
+	background-size: contain;
+}
+
+/* ------------------------------ */
+
 @media screen and (max-width: 75em) {  /* до 1200px */
 	.img_with_backg .img_with_backg__img {
 		margin: 0;
@@ -1154,57 +1176,150 @@ header ul#primary-menu li a{
 		width:80%;
 	}
 	
-	.img_with_backg .mobile_background_display_none{
+	.mobile_background_display_none{
 		background-image: none!important;
 	}
 }
 
-/* --- h2, h1, top_description, zoom_text --- */
+/* --- are building --- */
 
-.h1{
-	line-height: 64px;
-	font-size: 64px;
-	font-family: 'Newt Serif', 'Times New Roman', serif;
-	color: #5a5a5a;
-	margin-top:18px;
-	margin-bottom:0;
+.are_building
+.are_building__container{
+	display:flex;
+	justify-content:space-between;
 }
 
-.h2{
-	font-size:93px;
-	color: #1086c2;
-	font-family: 'Newt Serif', 'Times New Roman', serif;
-	line-height:24px;
-	margin-top:18px;
-	margin-bottom:0;
+.are_building
+.are_building__left .title{
+	margin-top:70px;
+	margin-left: 200px;
 }
 
-.top_description{
-	font-family: Geneva, Helvetica, sans-serif;
-	color: #1086c2;
-	line-height: 24px;
-	font-size: 22px;
+.are_building
+.are_building__right{
+	background-color: #1b2033;
 }
 
-.zoom_text{
-	line-height: 80px;
-	font-size: 45px;
-	font-family: 'Newt Serif', 'Times New Roman', serif;
+.are_building
+.are_building__description{
+	color: #ffffff;
+	max-width: 550px;
+	padding: 20px 20px 70px 75px;
+	background-color: #1b2033;
+	margin-top: 90px;
+	margin-left: 127px;
+	-webkit-box-shadow: 3px 0 0 0 rgba(27,32,51,1);
+	-moz-box-shadow: 3px 0 0 0 rgba(27,32,51,1);
+	box-shadow: 3px 0 0 0 rgba(27,32,51,1);
 }
 
 @media screen and (max-width: 75em) {  /* до 1200px */
-	.h1{
-		line-height: 48px;
-		font-size: 44px;
+	.are_building
+	.are_building__container{
+		display:block;
 	}
 	
-	.h2 {
-		line-height: 24px;
-		font-size: 50px;
+	.are_building
+	.are_building__description{
+		max-width:initial;
+		margin-left:0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		padding: 20px;
+		margin-top: 60px;
 	}
 	
-	.top_description{
-		line-height: 17px;
-		font-size: 21px;
+	.are_building
+	.are_building__right{
+		display:block;
+		text-align: right;
+		background: none;
+		margin-top:10px;
+	}
+	
+	.are_building
+	.are_building__left .title{
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+/* --- venture_capital --- */
+
+.venture_capital
+.venture_capital__block{
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	padding-top:20px;
+}
+
+.venture_capital
+.venture_capital__title{
+	color:#FFFFFF;
+	background-color: #1b2033;
+	margin-left:300px;
+	padding:1px;
+}
+
+.venture_capital
+.venture_capital__block2{
+	display:flex;
+}
+
+.venture_capital
+.venture_capital__image{
+	margin-left:170px;
+}
+
+.venture_capital
+.venture_capital__right{
+	max-width:460px;
+}
+
+.venture_capital
+.venture_capital__black_block{
+	background-color: #1b2033;
+	height:70px;
+	width:100%;
+}
+
+.venture_capital
+.venture_capital__content_1{
+	padding:20px;
+}
+
+.venture_capital
+.venture_capital__content_2{
+	padding:0 20px;
+}
+
+@media screen and (max-width: 75em) {  /* до 1200px */
+	.venture_capital
+	.venture_capital__black_block{
+		display:none;
+	}
+	
+	.venture_capital .venture_capital__title,
+	.venture_capital .venture_capital__image{
+		margin-left:0;
+	}
+}
+
+@media screen and (max-width: 60.625em){
+	/* 46.875em = 750px = col-sm */
+	.venture_capital
+	.venture_capital__block2 {
+		display: block;
+	}
+}
+
+/* -- advanced classes -- */
+.as_border_left_set_to_blue_desktop{
+	border-left:3px solid #1086c2;
+}
+@media screen and (max-width: 75em) {
+	.as_border_left_set_to_blue_desktop{
+		border-left:0;
 	}
 }

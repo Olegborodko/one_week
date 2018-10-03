@@ -4,6 +4,34 @@
 
 $options = array(
 
+'image' => array(
+'type'  => 'upload',
+'label' => __('image', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'background' => array(
+'type'  => 'upload',
+'label' => __('background', '{domain}'),
+'images_only' => true,
+'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
+),
+
+'background_mobile' => array(
+'label' => __('Background display on mobile', 'fw'),
+'type'  => 'switch',
+'value' => 'yes',
+'left-choice' => array(
+'value' => 'yes',
+'label' => __('YES', 'fw')
+),
+'right-choice' => array(
+'value' => 'no',
+'label' => __('NO', 'fw'),
+)
+),
+
 'title' => array(
 'type'   => 'wp-editor',
 'attr'  => array( 'class' => 'custom-class unyson_wp_editor', 'data-foo' => 'bar' ),
@@ -12,17 +40,19 @@ $options = array(
 'size' => 'large'
 ),
 
-'image' => array(
-'type'  => 'upload',
-'label' => __('image', '{domain}'),
-'images_only' => true,
-'files_ext' => array( 'gif', 'bmp', 'png', 'jpeg', 'jpg'),
-),
-
-'text' => array(
+'content_1' => array(
 'type'   => 'wp-editor',
 'attr'  => array( 'class' => 'custom-class unyson_wp_editor', 'data-foo' => 'bar' ),
-'label'  => __( 'Content', 'fw' ),
+'label'  => __( 'Content 1', 'fw' ),
+'desc'   => __( 'Enter some content for this text-block', 'fw' ),
+'shortcodes' => false,
+'size' => 'large'
+),
+
+'content_2' => array(
+'type'   => 'wp-editor',
+'attr'  => array( 'class' => 'custom-class unyson_wp_editor', 'data-foo' => 'bar' ),
+'label'  => __( 'Content 2', 'fw' ),
 'desc'   => __( 'Enter some content for this text-block', 'fw' ),
 'shortcodes' => false,
 'size' => 'large'
