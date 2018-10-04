@@ -37,24 +37,40 @@ if ( !empty( $atts['image'] ) && !empty($atts['image']['url']) ) {
   $image = esc_attr($atts['image']['url']);
 }
 
+$name = '';
+if ( ! empty( $atts['name'] ) ) {
+  $name = esc_attr($atts['name']);
+}
+
+$profession = '';
+if ( ! empty( $atts['profession'] ) ) {
+  $profession = esc_attr($atts['profession']);
+}
+
+$link = '';
+if ( ! empty( $atts['link'] ) ) {
+  $link = esc_attr($atts['link']);
+}
+
 ?>
 
 <div data-animated="<?=$animated?>"
-     class="animated are_building js_mobile_margin <?=$class?>"
+     class="animated team_item js_mobile_margin <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      data-m-bottom="<?=$m_margin_bottom?>"
      style="margin-top: <?=$margin_top?>;
      margin-bottom: <?=$margin_bottom?>;">
-  <div class="are_building__container">
-    <div class="are_building__left">
-      <div class="title"><?=$atts['title']?></div>
-      <div class="are_building__description">
-        <?=$atts['text']?>
-      </div>
+	<a href="<?=$link?>" target="_blank" class="team_item__block">
+   <img class="team_item__img" src="<?=$image?>"/>
+   <div class="team_item__dots"></div>
+   <div class="team_item__description">
+    <div class="team_item__name">
+      <?=$name?>
     </div>
-    <div class="are_building__right">
-      <img src="<?=$image?>"/>
-    </div>
-  </div>
+     <div class="team_item__profession">
+       <?=$profession?>
+     </div>
+   </div>
+ </a>
 </div>
 	

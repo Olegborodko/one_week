@@ -53,7 +53,7 @@ if ( !empty( $atts['background_mobile'] )) {
 ?>
 
 <div data-animated="<?=$animated?>"
-     class="venture_capital js_mobile_margin <?=$class?>"
+     class="animated venture_capital js_mobile_margin <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      data-m-bottom="<?=$m_margin_bottom?>"
      style="margin-top: <?=$margin_top?>;
