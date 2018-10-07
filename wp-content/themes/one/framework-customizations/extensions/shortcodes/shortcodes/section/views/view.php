@@ -97,20 +97,28 @@ if ( ! empty( $atts['m_margin_bottom'] ) ) {
   $m_margin_bottom = esc_attr($atts['m_margin_bottom']);
 }
 
+$padding = '0';
+if ( ! empty( $atts['padding'] ) ) {
+  $padding =  esc_attr($atts['padding']);
+}
+
+$padding_mobile = '0';
+if ( ! empty( $atts['padding_mobile'] ) ) {
+  $padding_mobile =  esc_attr($atts['padding_mobile']);
+}
+
 ?>
 <section data-animated="<?=$animated?>"
          data-m-top="<?=$m_margin_top?>"
          data-m-bottom="<?=$m_margin_bottom?>"
+         data-m-padding="<?=$padding_mobile?>"
          id="<?= esc_attr($id) ?>"
          class="animated js_mobile_margin fw-main-row <?php echo esc_attr($section_extra_classes) ?>"
          <?php echo $bg_video_data_attr; ?>
-         style="margin-top: <?= $margin_top ?>; margin-bottom: <?= $margin_bottom ?>;" >
-  
-	<div style="<?=$container_style?>" class="<?php echo esc_attr($container_class); ?>">
+         style="margin-top: <?= $margin_top ?>; margin-bottom: <?= $margin_bottom ?>;
+         padding:<?=$padding?>;<?=$container_style?>;" >
 
-  <div <?=$section_max_width?>>
+  <div <?=$section_max_width?> class="<?php echo esc_attr($container_class); ?>">
 		  <?php echo do_shortcode( $content ); ?>
   </div>
-
-	</div>
 </section>

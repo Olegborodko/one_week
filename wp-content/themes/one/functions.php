@@ -210,3 +210,5 @@ function my_admin_theme_style() {
   wp_enqueue_style('my-admin-style', get_template_directory_uri() . '/css/frontend_and_backend.css');
 }
 add_action('admin_enqueue_scripts', 'my_admin_theme_style');
+
+/* --- */

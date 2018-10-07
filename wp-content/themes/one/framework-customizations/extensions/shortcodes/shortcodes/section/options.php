@@ -93,6 +93,20 @@ $options = array(
 'desc'  => __('0, 44px, ...', 'fw')
 ),
 
+'padding' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
+'padding_mobile' => array(
+'type'  => 'text',
+'value' => '0',
+'label' => __('padding mobile', '{domain}'),
+'desc'  => __('example -> 10px 20px 0 1%, 10px', 'fw'),
+),
+
   'is_mobile_display' => array(
   'label' => __('Mobile display', 'fw'),
   'type'  => 'switch',

@@ -1017,7 +1017,7 @@ header.js_menu_display_none{
 }
 
 header.js_menu_scroll_now{
-	border-bottom:1px solid #2025c0;
+	
 }
 
 body{
@@ -1052,13 +1052,13 @@ header ul#primary-menu li a{
 	.main-navigation ul {
 		display: block;
 	}
-	
-	header #primary-menu {
-		
-	}
 }
 
 @media screen and (max-width: 75em) { /* до 1200px */
+	header#masthead {
+		border-bottom: 1px solid #2025c0;
+	}
+	
 	header .button-menu-toggle {
 		display: inline-block;
 		float: right;
@@ -1304,6 +1304,17 @@ header ul#primary-menu li a{
 	.venture_capital .venture_capital__image{
 		margin-left:0;
 	}
+	
+	.venture_capital
+	.venture_capital__content_1,
+	.venture_capital
+	.venture_capital__content_2{
+		padding:0;
+	}
+	
+	.venture_capital .venture_capital__title{
+		padding:1px 10px;
+	}
 }
 
 @media screen and (max-width: 60.625em){
@@ -1348,7 +1359,7 @@ header ul#primary-menu li a{
 }
 
 .team_item__description{
-	background:#1086c2;
+	background:#000000;
 	color:#FFFFFF;
 }
 
@@ -1361,8 +1372,8 @@ header ul#primary-menu li a{
 	position:absolute;
 	display:inline-block;
 	left:0;
-	bottom:0;
-	padding: 18px 20px;
+	bottom:16px;
+	padding: 18px 20px 5px;
 }
 
 .team_item__img{
@@ -1370,11 +1381,16 @@ header ul#primary-menu li a{
 }
 
 .team_item__name{
-	font-family: Geneva, Helvetica, sans-serif;
+	font-family: 'Oswald', 'Times New Roman', serif;
+	font-weight: 500;
+	font-size: 22px;
 }
 
 .team_item__profession{
-	font-family: 'Newt Serif', 'Times New Roman', serif;
+	font-family: 'Oswald', 'Times New Roman', serif;
+	font-weight: 300;
+	font-size: 15px;
+	color:#FFFFFF;
 }
 
 @media screen and (max-width: 75em) {
@@ -1392,5 +1408,155 @@ header ul#primary-menu li a{
 	
 	.team_item__profession{
 		font-size: 14px;
+	}
+}
+
+/* --- venture_capital --- */
+
+.venture_capital_mirror
+.venture_capital_mirror__block{
+	background-repeat:no-repeat;
+	background-position: right 0;
+	padding-top:20px;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__title{
+	color:#FFFFFF;
+	background-color: #1b2033;
+	margin-right:270px;
+	padding:1px;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__block2{
+	display:flex;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__image{
+
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__left{
+	max-width: 460px;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__black_block{
+	background-color: #1b2033;
+	height:70px;
+	width:100%;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__content_1{
+	padding:20px;
+}
+
+.venture_capital_mirror
+.venture_capital_mirror__content_2{
+	padding:0 20px;
+}
+
+@media screen and (max-width: 75em) {  /* до 1200px */
+	.venture_capital_mirror
+	.venture_capital_mirror__black_block{
+		display:none;
+	}
+	
+	.venture_capital_mirror .venture_capital_mirror__title{
+		margin-right: 0;
+	}
+	
+	.venture_capital_mirror
+	.venture_capital_mirror__content_1,
+	.venture_capital_mirror
+	.venture_capital_mirror__content_2{
+		padding:0;
+	}
+	
+	.venture_capital_mirror
+	.venture_capital_mirror__title{
+		padding:1px 10px;
+	}
+}
+
+@media screen and (max-width: 60.625em){
+	/* 46.875em = 750px = col-sm */
+	.venture_capital_mirror
+	.venture_capital_mirror__block2 {
+		display: block;
+	}
+}
+
+/* -- black_block -- */
+
+.black_block__item{
+	color:#FFFFFF;
+}
+
+.black_block p{
+	margin:0;
+	line-height: initial;
+}
+
+.black_block__center{
+	padding:10px 50px 30px;
+	border: 4px solid #ffffff;
+}
+
+.black_block__item{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	align-content:stretch;
+}
+
+.black_block__left{
+	flex:1 1 auto;
+	position:relative;
+}
+
+.black_block__right{
+	flex:1 1 auto;
+	position:relative;
+}
+
+.black_block__center{
+	flex:1 1 auto;
+}
+
+.black_block__left
+.black_block__bottom{
+	height:50%;
+	width:calc(100% + 15px);
+	position:absolute;
+	left:-15px;
+	top:50%;
+}
+
+.black_block__right
+.black_block__bottom{
+	height:50%;
+	width:calc(100% + 15px);
+	position:absolute;
+	left:0;
+	top:50%;
+}
+
+@media screen and (max-width: 75em) {  /* до 1200px */
+	.black_block__left,
+	.black_block__right{
+		display:none;
+	}
+	
+	.black_block__item{
+		display:block;
+	}
+	
+	.black_block__center{
+		padding:10px 20px 20px;
 	}
 }
