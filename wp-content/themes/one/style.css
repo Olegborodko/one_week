@@ -1017,7 +1017,7 @@ header.js_menu_display_none{
 }
 
 header.js_menu_scroll_now{
-	
+	border-bottom:1px solid #2025c0;
 }
 
 body{
@@ -1051,6 +1051,10 @@ header ul#primary-menu li a{
 	}
 	.main-navigation ul {
 		display: block;
+	}
+	
+	header #primary-menu {
+		
 	}
 }
 

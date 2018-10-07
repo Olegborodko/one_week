@@ -139,10 +139,14 @@ jQuery(window).bind("load", function() {
           this_next.addClass("sub_menu_open");
         }
       }else {
-        //if (!this_.closest(".sub_menu_open").length) {
+        if (mobile_size_1200) {
           close_sub_menu();
           jQuery("#primary-menu").css("display", "none");
+        }else{
+        //if (!this_.closest(".sub_menu_open").length) {
+          close_sub_menu();
         //}
+        }
       }
 
       // if don't use scroll active
