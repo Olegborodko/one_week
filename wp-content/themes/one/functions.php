@@ -130,6 +130,8 @@ function one_scripts() {
 
 	wp_enqueue_script( 'one-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 
+  wp_enqueue_script( 'intersection-observer-js', get_template_directory_uri() . '/js/intersection-observer.js', array(), '2015121512', true );
+
   wp_enqueue_script( 'one-main-js', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 
   wp_enqueue_script( 'scrollama', get_template_directory_uri() . '/js/scrollama.min.js', array(), '201512158', true );
