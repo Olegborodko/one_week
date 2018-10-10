@@ -64,4 +64,8 @@ h2.h2{
     line-height: 17px;
     font-size: 21px;
   }
+  
+  .g_mobile_align_center{
+    text-align: center!important;
+  }
 }
