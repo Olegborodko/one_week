@@ -115,6 +115,11 @@ $cfg['grid.columns'] = array(
 'backend_class'  => 'fw-col-sm-3',
 'frontend_class' => 'fw-col-xs-6 fw-col-sm-6 fw-col-md-6 fw-col-lg-3',
 ),
+'xs_6&lg_4' => array(
+'title'          => 'xs_6&lg_4',
+'backend_class'  => 'fw-col-sm-4',
+'frontend_class' => 'fw-col-xs-6 fw-col-sm-6 fw-col-md-6 fw-col-lg-4',
+),
 '1_1' => array(
 'title'          => '1/1',
 'backend_class'  => 'fw-col-sm-12',

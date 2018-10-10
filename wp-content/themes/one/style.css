@@ -1029,6 +1029,10 @@ header .custom-logo-link{
 	line-height: 0;
 }
 
+header .custom-logo-link img{
+	width: 260px;
+}
+
 header #primary-menu li.active a{
 	color: #2025c0;
 }
@@ -1369,7 +1373,9 @@ header ul#primary-menu li a{
 
 .team_item__block{
 	position:relative;
-	display:inline-block;
+	display:block;
+	margin: 0 auto;
+	max-width: 262.5px;
 }
 
 .team_item__description{
