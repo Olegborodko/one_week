@@ -55,7 +55,7 @@ if ( ! empty( $atts['max_width_center_container'] ) ) {
 ?>
 
 <div data-animated="<?=$animated?>"
-     class="animated black_block js_mobile_margin <?=$class?>"
+     class="animated black_block js_equal_height js_mobile_margin <?=$class?>"
      data-m-top="<?=$m_margin_top?>"
      data-m-bottom="<?=$m_margin_bottom?>"
      style="margin-top: <?=$margin_top?>;

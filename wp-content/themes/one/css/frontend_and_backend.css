@@ -5,7 +5,7 @@ h1.h1, h3.h3{
   font-size: 64px;
   font-family: 'Newt Serif', 'Times New Roman', serif;
   color: #5a5a5a;
-  margin-top:18px;
+  margin-top:25px;
   margin-bottom:0;
 }
 
@@ -36,10 +36,10 @@ h2.h2{
 }
 
 .small_text{
-  font-size: 20px;
+  font-size: 16px;
   color: #5a5a5a;
   font-family: 'Oswald', 'Helvetica Neue', sans-serif;
-  line-height: 20px;
+  line-height: 30px;
 }
 
 .blue_middle_text{
@@ -47,6 +47,12 @@ h2.h2{
   font-family: 'Newt Serif', 'Times New Roman', serif;
   color: #1086c2;
   line-height: 36px;
+}
+
+.black_block__text_style{
+  font-size: 18px;
+  font-family: 'Oswald', Arial, sans-serif;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 75em) {  /* до 1200px */
@@ -67,5 +73,10 @@ h2.h2{
   
   .g_mobile_align_center{
     text-align: center!important;
+  }
+  
+  .venture_capital__title p {
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

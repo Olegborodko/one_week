@@ -1004,7 +1004,7 @@ header.js_menu_display_none{
 }
 
 header.js_menu_scroll_now{
-	border-bottom:1px solid #2025c0;
+	/* border-bottom:1px solid #2025c0; */
 }
 
 body{
@@ -1021,7 +1021,7 @@ header .custom-logo-link img{
 }
 
 header #primary-menu li.active a{
-	color: #2025c0;
+	color: #1086c2;
 }
 
 header .site-logo{
@@ -1051,7 +1051,7 @@ header ul#primary-menu li a{
 
 @media screen and (max-width: 75em) { /* до 1200px */
 	header#masthead {
-		border-bottom: 1px solid #2025c0;
+		/* border-bottom: 1px solid #2025c0; */
 	}
 	
 	header .button-menu-toggle {
@@ -1250,6 +1250,16 @@ header ul#primary-menu li a{
 }
 
 .venture_capital
+.venture_capital__left{
+	flex-shrink: 0; /* ! */
+}
+
+.venture_capital
+.venture_capital__right{
+	
+}
+
+.venture_capital
 .venture_capital__title{
 	color:#FFFFFF;
 	background-color: #1b2033;
@@ -1265,11 +1275,6 @@ header ul#primary-menu li a{
 .venture_capital
 .venture_capital__image{
 	margin-left:170px;
-}
-
-.venture_capital
-.venture_capital__right{
-	max-width:460px;
 }
 
 .venture_capital
@@ -1304,7 +1309,7 @@ header ul#primary-menu li a{
 	.venture_capital__content_1,
 	.venture_capital
 	.venture_capital__content_2{
-		padding:0;
+		padding-left:10px;
 	}
 	
 	.venture_capital .venture_capital__title{
@@ -1497,6 +1502,10 @@ header ul#primary-menu li a{
 .black_block p{
 	margin:0;
 	line-height: initial;
+}
+
+.black_block__text{
+	margin-top: 8px;
 }
 
 .black_block__center{
@@ -1899,4 +1908,14 @@ footer .newsletter_press_releases__email:-ms-input-placeholder { /* IE 10+ */
 footer .newsletter_press_releases__email:-moz-placeholder { /* Firefox 18- */
 	color: #101113;
 	opacity: 1;
+}
+
+/* --- venture_capital_with_buttons --- */
+
+.venture_capital_with_buttons__button2{
+	margin-top:30px;
+}
+
+.venture_capital_with_buttons__content_2{
+	text-align:center;
 }

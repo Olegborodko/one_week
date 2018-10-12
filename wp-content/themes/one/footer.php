@@ -46,6 +46,11 @@
               <b>Address:</b><br>
               <?=fw_get_db_settings_option('address')?>
             </div>
+
+            <div class="footer_about__address">
+              <b>Address:</b><br>
+              <?=fw_get_db_settings_option('address2')?>
+            </div>
           </div>
         </div>
       </div>

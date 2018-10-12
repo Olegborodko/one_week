@@ -47,6 +47,12 @@ array(
     'label' => __('Address', '{domain}')
     ),
 
+    'address2' => array(
+    'type'  => 'text',
+    'value' => '855 El Camino Real, Suite 12 Palo Alto, California 94301 USA',
+    'label' => __('Address 2', '{domain}')
+    ),
+
     'mail_chimp' => array(
     'type'  => 'text',
     'value' => '[mc4wp_form id="6856"]',

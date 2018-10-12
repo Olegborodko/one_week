@@ -196,6 +196,25 @@ jQuery(window).bind("load", function() {
     }
   })
   .onStepExit();
+
+  //========================= js_equal_height
+  var js_equal_height_max = 0;
+  jQuery(".js_equal_height").each(function (i, el) {
+    var el_ = jQuery(el);
+    var el_height = el_.height();
+
+    if ( el_height > js_equal_height_max){
+      js_equal_height_max = el_height;
+    }
+  });
+
+  console.log(js_equal_height_max);
+
+  jQuery(".js_equal_height").each(function (i, el) {
+    var el_ = jQuery(el);
+    var el_item = el_.find('.black_block__item');
+    el_item.css('height', js_equal_height_max + "px");
+  });
 });
 
 
