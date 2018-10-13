@@ -1032,7 +1032,7 @@ header .site-logo{
 header ul#primary-menu li a{
 	font-family: Oswald, Arial, sans-serif;
 	color: #9b9b9b;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 300;
 }
 
@@ -1385,13 +1385,13 @@ header ul#primary-menu li a{
 .team_item__name{
 	font-family: 'Oswald', 'Times New Roman', serif;
 	font-weight: 500;
-	font-size: 22px;
+	font-size: 16px;
 }
 
 .team_item__profession{
 	font-family: 'Oswald', 'Times New Roman', serif;
 	font-weight: 300;
-	font-size: 15px;
+	font-size: 12px;
 	color:#FFFFFF;
 }
 

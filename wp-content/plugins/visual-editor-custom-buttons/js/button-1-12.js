@@ -6,9 +6,9 @@ function getBaseURL () {
 }
 
 (function() {
-    tinymce.create('tinymce.plugins.vecb_button11', {
+    tinymce.create('tinymce.plugins.vecb_button12', {
         init : function(ed, url) {
-            ed.addButton('vecb_button11', {
+            ed.addButton('vecb_button12', {
                 title : 'black_block__text_style',image : url+'/icons/brush.png',onclick : function() {
                      ed.selection.setContent('<span class="black_block__text_style">' + ed.selection.getContent() + '</span>');
                 }
@@ -18,5 +18,5 @@ function getBaseURL () {
             return null;
         },
     });
-    tinymce.PluginManager.add('vecb_button11', tinymce.plugins.vecb_button11);
+    tinymce.PluginManager.add('vecb_button12', tinymce.plugins.vecb_button12);
 })();
