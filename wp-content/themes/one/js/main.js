@@ -213,7 +213,9 @@ jQuery(window).bind("load", function() {
   jQuery(".js_equal_height").each(function (i, el) {
     var el_ = jQuery(el);
     var el_item = el_.find('.black_block__item');
+    var el_item_center = el_.find('.black_block__center');
     el_item.css('height', js_equal_height_max + "px");
+    el_item_center.css('height', js_equal_height_max + "px");
   });
 });
 

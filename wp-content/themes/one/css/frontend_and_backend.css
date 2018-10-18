@@ -26,6 +26,15 @@ h4.h4{
   margin-bottom: 18px;
 }
 
+h5.h5{
+  font-size: 30px;
+  line-height: 36px;
+  font-family: Geneva, Arial, sans-serif;
+  margin-top: 18px;
+  margin-bottom: 18px;
+  color: #5a5a5a;
+}
+
 .mce-visualblocks h4{
   font-size: 45px!important;
   line-height: 45px!important;
